@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>view</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (id)init{
+    if(self = [super init]){
+        [self setupViews];
+        [self setupConstraints];
+    }
+    
+    return self;
+}
+
+- (void)setupViews{
+    
+}
+
+- (void)setupConstraints{
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>096D39AC-A4BB-4DD1-B180-5BE2E25889EB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Default implementation of a UIView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

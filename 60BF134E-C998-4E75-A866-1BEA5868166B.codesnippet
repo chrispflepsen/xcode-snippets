@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>vcTableViewNotifications</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@interface &lt;#Class Name#&gt; ()
+
+@end
+
+@implementation &lt;#Class Name#&gt;
+
+#pragma mark - init
+
+- (&lt;#Class Name#&gt; *)init{
+    if(self = [super init]){
+        [self setupNotifications];
+    }
+    
+    return self;
+}
+
+- (void)dealloc{
+    [self removeNotifications];
+}
+
+#pragma mark - Lifecycle
+
+-(void)loadView{
+    self.view = [[&lt;#View Class#&gt; alloc] init];
+}
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    
+    //Perform any additional initialization of your views
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+}
+
+- (void)didReceiveMemoryWarning{
+    [super didReceiveMemoryWarning];
+
+}
+
+#pragma mark - Notifications
+
+- (void)setupNotifications{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(&lt;#selector#&gt;) name:&lt;#Notification Name#&gt; object:nil];
+}
+
+- (void)removeNotifications{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return &lt;#number#&gt;;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return &lt;#number#&gt;;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *identifier = &lt;#Cell Identifier #&gt;
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    
+    [self configureCell:cell forRowAtIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    &lt;#statements#&gt;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    &lt;#statements#&gt;
+}
+
+#pragma mark - Actions
+
+#pragma mark - Private Methods
+
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>60BF134E-C998-4E75-A866-1BEA5868166B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Default VC implementation with Table View and Notification methods</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>View Controller - Table View and Notifications</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

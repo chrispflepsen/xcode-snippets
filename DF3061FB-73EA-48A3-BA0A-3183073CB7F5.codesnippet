@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>notifications</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Notifications
+
+- (void)setupNotifications{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(&lt;#selector#&gt;) name:&lt;#Notification Name#&gt; object:nil];
+}
+
+- (void)removeNotifications{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DF3061FB-73EA-48A3-BA0A-3183073CB7F5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates and Removes Notifications</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Notifications</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
