@@ -15,7 +15,7 @@
                                                              toItem:&lt;#(nullable id)#&gt;
                                                           attribute:&lt;#(NSLayoutAttribute)#&gt;
                                                          multiplier:&lt;#(CGFloat)#&gt;
-                                                           constant:&lt;#(CGFloat)#&gt;];</string>
+                                                           constant:&lt;#(CGFloat)#&gt;]];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E2433255-8787-4353-9260-7632836A56BE</string>
 	<key>IDECodeSnippetLanguage</key>
