@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>vcDefault</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@interface &lt;#Class Name#&gt; ()
+
+@end
+
+@implementation &lt;#Class Name#&gt;
+
+#pragma mark - init
+
+- (&lt;#Class Name#&gt; *)init{
+    if(self = [super init]){
+    
+    }
+    
+    return self;
+}
+
+- (void)dealloc{
+    
+}
+
+#pragma mark - Lifecycle
+
+-(void)loadView{
+    self.view = [[UIView alloc] init];
+}
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    
+    //Perform any additional initialization of your views
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+}
+
+- (void)didReceiveMemoryWarning{
+    [super didReceiveMemoryWarning];
+}
+
+#pragma mark - Actions
+
+#pragma mark - Private Methods
+
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B72E4423-49F9-4352-A68C-1C9599BEA831</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Default Implememtaion of a View Controller</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>View Controller Default</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
